@@ -1,6 +1,7 @@
 package com.chy.common.utils;
 
-import com.atguigu.yygh.common.helper.JwtHelper;
+
+import com.chy.common.helper.JwtHelper;
 
 import javax.servlet.http.HttpServletRequest;
 
