@@ -150,6 +150,8 @@ public class HospitalSetController {
         String hosname = HospitalSet.getHosname();
 
         return  Result.ok();
+
+        //
     }
 
 

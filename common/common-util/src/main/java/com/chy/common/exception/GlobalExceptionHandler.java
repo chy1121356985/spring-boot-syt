@@ -8,11 +8,12 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @author 11213
- * 全局异常捕捉
+ * 异常捕捉
  */
 @ControllerAdvice
 public class GlobalExceptionHandler {
 
+    //全局异常 自动补捕获
     @ExceptionHandler(Exception.class)
     @ResponseBody
     public Result error(Exception e) {
@@ -20,6 +21,7 @@ public class GlobalExceptionHandler {
         return Result.fail();
     }
 
+    //自定义异常 手动抛出
     @ExceptionHandler(YyghException.class)
     @ResponseBody
     public Result error(YyghException e) {
